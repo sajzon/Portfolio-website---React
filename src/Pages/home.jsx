@@ -3,6 +3,8 @@ import "./homeView.css"
 import Navbar from '../Components/navbar/Navbar'
 import Test from '../Test'
 import Hero from '../Components/hero/Hero'
+import Parallax from '../Components/parallax/Parallax'
+import Services from '../Components/services/Services'
 const home = () => {
   return (
     <div>
@@ -10,13 +12,18 @@ const home = () => {
         <Navbar/>
         <Hero/>
       </section>
-      <section id='Services'>parallax</section>
-      <section>services</section>
-      <section id='Portfolio'>parallax</section>
-      <section>portfolio1</section>
+      <section id='Services'>
+          <Parallax/>
+     
+      </section>
+      <section><Services/></section>
+      <section id='Portfolio'></section>
+      <section >
+       portfolio1
+      </section>
       <section>portfolio2</section>
       <section>portfolio3</section>
-      <section id='Contact'>contact</section>
+      <section id='Contact'> contacts</section>
       {/* <Test/> */}
     </div>
   )

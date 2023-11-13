@@ -1,6 +1,6 @@
 import React from 'react'
 import "./services.css"
-import { motion } from 'framer-motion'
+import { motion} from 'framer-motion'
 
 const variants={
     initial:{
@@ -20,9 +20,16 @@ const variants={
 };
 
 
-const Services = () => {
+ const Services = () => {
+
+      
   return (
-    <motion.div className='services' variants={variants} initial="initial" animate="animate">
+    <motion.div className='services' variants={variants} 
+    initial="initial"
+  // animate="animate"
+   whileInView="animate"
+       
+    >
         <motion.div className="textContainer"variants={variants} >
             <p className='para1'>
                 I focus on helping your brand grow
@@ -34,12 +41,12 @@ const Services = () => {
         <div className="title">
             <img className='img' src="/people.webp" alt="" />
             <h1 className='topicA'>
-                <b>Unique</b> Ideas
+                <motion.b whileHover={{ color:"orange" }}>Unique</motion.b> Ideas
             </h1>
         </div>
         <div className="title">
             <h1 className='topicA'>
-                <b>For Your</b> Business.
+                <motion.b whileHover={{ color:"orange" }} >For Your</motion.b> Business.
             </h1>
             <button className='btn1'>WHAT WE DO?</button>
         </div>

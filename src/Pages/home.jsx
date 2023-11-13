@@ -5,6 +5,7 @@ import Test from '../Test'
 import Hero from '../Components/hero/Hero'
 import Parallax from '../Components/parallax/Parallax'
 import Services from '../Components/services/Services'
+import Portfolio from '../Components/portfolio/Portfolio'
 const home = () => {
   return (
     <div>
@@ -18,11 +19,7 @@ const home = () => {
       </section>
       <section><Services/></section>
       <section id='Portfolio'></section>
-      <section >
-       portfolio1
-      </section>
-      <section>portfolio2</section>
-      <section>portfolio3</section>
+       <Portfolio/>
       <section id='Contact'> contacts</section>
       {/* <Test/> */}
     </div>
